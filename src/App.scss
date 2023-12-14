@@ -1,0 +1,14 @@
+@import './config.scss';
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('./fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+body {
+    font-family: $font-padrao;
+    background-image: url('./assets/svg/Home\ -\ Desktop.svg');
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+    color: white;
+}

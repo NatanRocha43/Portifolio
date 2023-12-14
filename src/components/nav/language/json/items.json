@@ -1,0 +1,6 @@
+[
+    { "path": "/", "translationKey": "menuHome" },
+    { "path": "/about", "translationKey": "menuSobremim" },
+    { "path": "/project", "translationKey": "menuProject" },
+    { "path": "/contact", "translationKey": "menuContato" }
+  ]

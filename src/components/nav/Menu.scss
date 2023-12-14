@@ -1,0 +1,92 @@
+@import '../../config.scss';
+.header {
+  // estilos para o cabeçalho
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: $spacing-padrao-desktop;
+  border-bottom: 1px solid #ffffff0d;
+
+  &__menu {
+    // estilos para a lista de menu
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 99999;
+
+    &--li {
+      // estilos para os itens do menu
+      margin: 0 1rem;
+      color: $grey-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $hover-color;
+      }
+
+      &.active {
+        border-bottom: 1px solid $grey-color;
+        color: $grey-color;
+      }
+    }
+  }
+  .main-nav{
+    margin-right: 15px;
+  }
+
+  .nav-btn {
+    // estilos para o botão de navegação
+    display: none;
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: $grey-color;
+      font-size: 1.8rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    justify-content: space-between;
+
+    nav {
+      // estilos para o menu responsivo
+      position: fixed;
+      top: -100vh;
+      left: 0;
+      height: 35%;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #0A0A0A;
+      transition: 1s;
+
+      &.responsive_nav {
+        transform: translateY(100vh);
+      }
+
+      .nav-close-btn {
+        // estilos para o botão de fechar o menu
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+      }
+
+      a {
+        // estilos para links no menu responsivo
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
